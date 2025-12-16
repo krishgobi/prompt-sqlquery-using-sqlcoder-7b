@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-sql"
+version = "0.1.0"
+description = "SQL Query Generator using LLM"
+requires-python = ">=3.12"
+
+[tool.setuptools]
+packages = ["app", "db", "llm", "schema", "services"]
+
+[tool.pyright]
+pythonVersion = "3.12"
+pythonPlatform = "Windows"
+include = ["."]
+exclude = ["**/node_modules", "**/__pycache__", "prompt-sql", ".git"]
+extraPaths = ["."]
+typeCheckingMode = "basic"

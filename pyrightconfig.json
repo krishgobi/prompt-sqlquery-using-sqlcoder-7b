@@ -1,0 +1,7 @@
+{
+  "pythonVersion": "3.12",
+  "include": [""],
+  "exclude": ["**/node_modules", "**/__pycache__", "prompt-sql"],
+  "extraPaths": [""],
+  "typeCheckingMode": "basic"
+}
